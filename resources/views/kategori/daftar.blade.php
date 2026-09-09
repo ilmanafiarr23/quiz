@@ -19,6 +19,7 @@
     <table border="1"> 
         <tr>
             <th>Nama</th>
+            <th>Aksi</th>
         </tr>
         @foreach ($kategoris as $kategori)
         <tr>
