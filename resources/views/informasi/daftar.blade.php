@@ -46,6 +46,9 @@
             <a href="{{ route('informasi.ubah', $data) }}">
                 [UBAH]
             </a>
+            <a href="{{ route('informasi.show', $data) }}">
+                [DETAIL]
+            </a>
         </td>
     </tr>
     @endforeach

@@ -81,5 +81,12 @@ class InformasiController extends Controller
 
         return redirect('daftar-informasi')->with('success', 'Informasi berhasil disimpan!');
          } 
+
+    public function show(Informasi $informasi)
+    {
+        return view('informasi.show', [
+            'informasi' => $informasi
+        ]);
+    }
         
 }
