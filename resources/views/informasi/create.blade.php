@@ -21,7 +21,7 @@
                 <select name="kategori_id">
 
                     <option value="">
-                        -- Pilih Kategori --
+                        Pilih Kategori
                     </option>
 
                     @foreach ($kategori as $k)
@@ -36,37 +36,25 @@
 
         <tr>
             <td>Judul</td>
-            <td>
-                <input type="text" name="judul"/>
-            </td>
+            <td><input type="text" name="judul"/></td>
         </tr>
-
         <tr>
             <td>Ringkasan</td>
-            <td>
-                <textarea name="ringkasan"></textarea>
-            </td>
+            <td><textarea name="ringkasan"></textarea></td>
         </tr>
-
         <tr>
             <td>Isi</td>
-            <td>
-                <textarea name="isi"></textarea>
-            </td>
+            <td><textarea name="isi"></textarea></td>
         </tr>
-
         <tr>
             <td>Sumber</td>
-            <td>
-                <input type="text" name="sumber"/>
-            </td>
+            <td> <input type="text" name="sumber"/></td>
         </tr>
 
         <tr>
             <td>Status</td>
             <td>
                 <select name="status">
-
                     <option value="draft">
                         Draft
                     </option>
@@ -74,11 +62,9 @@
                     <option value="published">
                         Published
                     </option>
-
                 </select>
             </td>
         </tr>
-
         <tr>
             <td colspan="2">
                 <input type="submit" value="Simpan"/>

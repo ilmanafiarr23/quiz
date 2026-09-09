@@ -18,6 +18,7 @@
     <br></br>
     <table border="1">
     <tr>
+        <th>Kategori</th>
         <th>Judul</th>
         <th>Ringkasan</th>
         <th>Isi</th>
@@ -27,8 +28,9 @@
     </tr>
     @foreach ($informasi as $data)
     <tr>
+        <td>{{ $data->kategori->nama}}</td>
         <td>{{ $data->judul }} </td>
-        <td> {{ $data->ringkasan }} </td>
+        <td>{{ $data->ringkasan }} </td>
         <td>{{ $data->isi }} </td>
         <td>{{ $data->sumber }}</td>
         <td>{{ $data->status }} </td>

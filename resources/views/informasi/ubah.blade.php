@@ -58,11 +58,7 @@
         <tr>
             <td>Sumber</td>
             <td>
-                <input 
-                    type="text" 
-                    name="sumber" 
-                    value="{{ $informasi->sumber }}"
-                />
+                <input type="text" name="sumber" value="{{ $informasi->sumber }}"/>
             </td>
         </tr>
 
@@ -70,17 +66,14 @@
             <td>Status</td>
             <td>
                 <select name="status">
-                    <option 
-                        value="draft"
-                        {{ $informasi->status == 'draft' ? 'selected' : '' }}
-                    >
+                    <option value="draft"
+                        {{ $informasi->status == 'draft' ? 'selected' : '' }}>
                         Draft
                     </option>
 
                     <option 
                         value="published"
-                        {{ $informasi->status == 'published' ? 'selected' : '' }}
-                    >
+                        {{ $informasi->status == 'published' ? 'selected' : '' }}>
                         Published
                     </option>
                 </select>
